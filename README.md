@@ -234,7 +234,7 @@ main() {
 main "$@"
 ````
 
-результат из логов
+результат из логов /var/log/http-server-deploy.log
 
 ````
 [2026-10-11 23:19:54] - [INFO] http-server.service start deploy
