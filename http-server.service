@@ -1,0 +1,15 @@
+[Unit]
+Description=http-server lesson13
+After=network.target
+
+[Service]
+Type=simple
+User=web-user
+Group=web-user
+WorkingDirectory=/opt/http-server
+ExecStart=python3 /opt/http-server/server.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
